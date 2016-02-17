@@ -1,5 +1,5 @@
 # sort-runtimes
-A Webapp using Apache Tomcat running Java to sort a text file with one of many sorting algorithms. Some basic HTML in Java Servlet Pages presents the sorted data.  
+A Webapp using Apache Tomcat running Java to sort a text file with the option of many different sorting algorithms. Some basic HTML in Java Servlet Pages presents the sorted data.  
 
 A project for my Webapps and Data Security class, the idea of comparing the runtimes of various sorting algorithms came to me since I was also taking a course on Algorithms at the same time. 
 
