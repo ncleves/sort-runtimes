@@ -1,4 +1,4 @@
-package us.daveread.skidmore.webapps.web;
+package us.ncleves.skidmore.webapps.web;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
