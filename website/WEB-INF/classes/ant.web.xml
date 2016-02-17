@@ -13,7 +13,7 @@
     <servlet-name>controller</servlet-name>
     <display-name>Controller Servlet</display-name>
     <description>The main controller for the application</description>
-    <servlet-class>us.daveread.skidmore.webapps.web.ControllerServlet</servlet-class>
+    <servlet-class>us.ncleves.skidmore.webapps.web.ControllerServlet</servlet-class>
     <load-on-startup>0</load-on-startup>
   </servlet>
 
