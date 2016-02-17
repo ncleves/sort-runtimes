@@ -1,0 +1,41 @@
+# Create a schema (MySQL calls it a database) for the tasklist app
+drop database if exists tasklist;
+create database tasklist;
+
+# Create an administrator for the tasklist data
+#drop user tasklistadmin;
+create user tasklistadmin identified by 'tasklistadmin';
+
+# Create an application user id for the tasklist web app
+#drop user tasklistwebapp;
+create user tasklistwebapp identified by 'tasklistwebapp';
+
+# Setup the permissions for the administrator and web application
+grant all on tasklist.* to tasklistadmin;
+grant select, delete, insert, update on tasklist.* to tasklistwebapp;
+
+# Change the active schema to the tasklist
+use tasklist;
+
+# Create the tasks table
+drop table if exists tasks;
+create table tasks (
+	id integer not null auto_increment,
+	owner_id varchar(20) not null,
+	person_id integer,
+	title varchar(500),
+	description varchar(5000),
+	due_date date,
+	completed_date date,
+	primary key (id)
+);
+
+# Create the person table
+drop table if exists person;
+create table person (
+	id integer not null auto_increment,
+	name varchar(40),
+	dob date,
+	primary key (id)
+);
+

@@ -1,0 +1,28 @@
+# Create a schema (MySQL calls it a database) for the tasklist app
+drop database if exists runtimes;
+create database runtimes;
+
+# Create an administrator for the runtimes data
+#drop user runtimesadmin;
+create user runtimesadmin identified by 'runtimesadmin';
+
+# Create an application user id for the runtimes web app
+#drop user runtimeswebapp;
+create user runtimeswebapp identified by 'runtimeswebapp';
+
+# Setup the permissions for the administrator and web application
+grant all on runtimes.* to runtimesadmin;
+grant select, delete, insert, update on runtimes.* to runtimeswebapp;
+
+# Change the active schema to the runtimes
+use runtimes;
+
+# Create the tasks table
+drop table if exists times;
+create table times (
+	id integer not null auto_increment,
+	algorithm_name varchar(20) not null,
+	time decimal(10, 5),
+	char_count long,
+	primary key (id)
+);
