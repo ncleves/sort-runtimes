@@ -5,7 +5,7 @@ A project for my Webapps and Data Security class, the idea of comparing the runt
 
 We often hear about the mathematical definition of an algorithms runtime, generally if it's O(2^n) it's considered slow and if it's O(nlgn) it's considered fast. But how are the speeds in a more relatable context? Can you really make a coffee AND drink it before Bubble sort is done?  (The sort answer is, with enough data, yes, you can...) 
 
-Table from the query database (time is in milliseconds):
+Table from the database query (time is in milliseconds):
 ```
 +----+----------------+-------------+------------+
 | id | algorithm_name | time        | char_count |
