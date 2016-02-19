@@ -19,4 +19,6 @@ Table from the database query (time is in milliseconds):
 |  7 | Bubble         | 13260.46015 |      50000 |
 +----+----------------+-------------+------------+
 ```
+Included in the repo are two text files 50,000 & 200,000 random unsorted numbers generated at Random.org. 
+
 Enjoy :)
