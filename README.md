@@ -20,11 +20,11 @@ Table from the database query (time is in milliseconds):
 +----+----------------+-------------+------------+
 ```
 
-###Main Page
+### Main Page
 
 ![Main page](https://github.com/ncleves/sort-runtimes/blob/master/mainpage.png)
 
-###Section of sorted output
+### Section of sorted output
 
 ![output](https://github.com/ncleves/sort-runtimes/blob/master/example%20output.png)
 
